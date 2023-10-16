@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fran Portfolio</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./mediaqueries.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    
+    <!-- navegacion -->
     <nav id="desktop-nav">
         <div class="logo">Franco Rutigliano</div>
         <div>
@@ -19,6 +20,24 @@
                     <li><a href="#projects">Projectos</a></li>
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- menu hamburguesa -->
+    <nav id="hamburger-nav">
+        <div class="logo">Franco Rutigliano</div>
+        <div class="hamburger-menu">
+            <div class="hamburguer-icon" onclick="toggleMenu()">
+                <span class="material-symbols-outlined">
+                    menu
+                    </span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">Sobre Mi</a></li>
+                <li><a href="#expierence" onclick="toggleMenu()">Expericencia</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projectos</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
             </div>
         </div>
     </nav>
